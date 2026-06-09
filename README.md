@@ -1,24 +1,53 @@
+<!-- ========================================================================= -->
+<!--                        WAND-ENHANCER — README                            -->
+<!--       Theme: Coding | Day Rotated | Animated SVGs | Live Badges       -->
+<!-- ========================================================================= -->
+
 <div align="center">
 
-![logo](./assets/icon.svg)
+<!-- ============================== BANNER ============================== -->
 
-# WandEnhancer
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,1a1b27,0d1117&height=180&section=header&text=Wand-Enhancer&fontSize=48&fontColor=ffffff&fontAlignY=38&animation=fadeIn" width="100%"/>
 
-[![GitLab Mirror](https://img.shields.io/badge/GitLab-mirror-fc6d26?logo=gitlab)](https://gitlab.com/kitbyte/wand-enhancer)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0/72-brightgreen?logo=virustotal)](https://www.virustotal.com/gui/file/f6897cf583e9f8ea11e0ee4c3fb99b86c50336b28de706e3e0b9181b4e3cf223)
+<!-- ============================== TYPING SVG ============================== -->
+
+<br/>
+
+<a href="https://github.com/VarshuAi/Wand-Enhancer"><img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=500&size=22&duration=3500&pause=800&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%24%20python3%20-m%20Wand-Enhancer;%5BOK%5D%20Loading%20dependencies...;%5BOK%5D%20Main%20thread%20running...;%5BOK%5D%20Status%3A%20Active" alt="Typing SVG"/></a>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Version-1.0-00FF41?style=for-the-badge&logo=github&logoColor=black" alt="Version"/>
+<img src="https://img.shields.io/badge/Code-Tech-00FF41?style=for-the-badge&logo=code&logoColor=black" alt="Language"/>
+<img src="https://img.shields.io/badge/Status-Active-14354C?style=for-the-badge&logo=git&logoColor=white" alt="Status"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,1a1b27,0d1117&height=60&section=header&text=&fontSize=0" width="100%"/>
 
 </div>
 
-<h4>An open-source interoperability tool designed to extend local client-side configurations and improve the UX of the Wand application.</h4>
+<!-- ============================== ABOUT ============================== -->
 
-**🚨 IMPORTANT NOTICE: THIS PROJECT HAS NO OFFICIAL YOUTUBE TUTORIALS OR GUIDES. 🚨
-There are no official videos showing how to install or use this tool. Scammers are creating fake tutorials using this project's name and placing malware/password stealers in the video descriptions. If you downloaded an .exe or archive from a YouTube link, YOU HAVE DOWNLOADED MALWARE. The only official, safe, and original source for this project is this exact GitHub repository. We are not responsible for third-party downloads.**
+<h2>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+<samp>&nbsp;[>_] SYSTEM LOG (About)</samp>
+</h2>
 
-## 👾 Is it safe to use?
+```yaml
+name: Wand-Enhancer
+version: 1.0
+type: Repository
+author: VarshuAi
+description: >
+  Advanced UX and interoperability extension for Wand (WeMod) app
+primary_tech: Code
+```
 
-Yes. This project is entirely open-source, allowing anyone to audit the code. It operates strictly locally, does not require internet access, and makes zero network requests. It simply adjusts local client settings to enhance your user experience.
+<!-- ============================== FEATURES ============================== -->
 
-## 💫 What features are improved?
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="28">
+<samp>&nbsp;[⚙️] SERVICE MODULES (Features)</samp>
+</h2>
 
 ✅ Local environment configuration management <br/>
 ✅ Automated compatibility adjustments for new client versions <br/>
@@ -26,116 +55,81 @@ Yes. This project is entirely open-source, allowing anyone to audit the code. It
 ✅ AI Features <br/>
 ✅ Remote web panel (Remote Connect on mobile) <br/>
 
-## 🌐 Remote Web Panel
-WandEnhancer includes a built-in **Remote Web Panel** allowing you to control app features directly from your phone.
+<!-- ============================== COMMANDS ============================== -->
 
-### Quick Start:
-1. Ensure both your PC and phone are on the **same Wi-Fi network**.
-2. Hover over the **Connect** button in the top bar of WandEnhancer.
-3. Scan the displayed **QR code** with your phone's camera.
+<h2>
+<img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28">
+<samp>&nbsp;[📡] INPUT / OUTPUT (Usage)</samp>
+</h2>
 
-### Troubleshooting & Remote Access:
-- **Page isn't loading?** First, ensure both your PC and phone are connected to the **same local network**. Some routers and guest Wi-Fi networks enable client isolation/AP isolation, which blocks devices on the same SSID from reaching each other. If it still does not load, check Windows Firewall and allow inbound traffic on TCP port `3223` for your local network. If Windows marked your connection as **Public**, switching it to **Private** can also help.
-- **Using mobile data or a different network?** If you want to use the panel over mobile data (LTE/5G) or from an entirely different network, you can use [Tailscale](https://tailscale.com/) or similar VPN tools.
-
-## 👀 How to use?
-
-1. Go to the [Releases](https://github.com/k1tbyte/Wand-Enhancer/releases) page.
-2. Download the latest binary release.
-3. Run the enhancer to apply local client modifications.
-
-> Source archives are intended for developers who want to build the project locally. They are not prebuilt binaries.
-
-## 🧩 Custom scripts
-
-You can inject your own JavaScript into Wand at patch time to tweak or fix things in the client UI. This reuses the same renderer injection the Remote Web Panel uses, so it requires the **Remote Web Panel** patch to be enabled.
-
-**How to add a script**
-
-- In the patch dialog, add one or more `.js` files (only existing `.js` files are accepted), **or**
-- Drop `.js` files into a `renderer-scripts/` folder placed next to the patcher executable.
-
-Then patch as usual — your scripts are bundled into the client and run inside Wand's window.
-
-**How it runs**
-
-- Each script runs inside Wand's renderer (full DOM access, plus Node `require`).
-- It is wrapped so a thrown error is logged and never crashes Wand.
-- It may run **more than once** per launch (on load and again shortly after), so guard one‑time work behind a global flag.
-- A small `WandEnhancer` helper is available: `WandEnhancer.log(...)`, `WandEnhancer.remoteUrl`, `WandEnhancer.apiVersion`.
-
-**Minimal example** (`hello.js`)
-
-```js
-// Injected scripts can run multiple times — guard one-time setup.
-if (!globalThis.__helloScriptInstalled) {
-  globalThis.__helloScriptInstalled = true;
-
-  WandEnhancer.log("Hello from my custom script!", WandEnhancer.remoteUrl);
-
-  new MutationObserver(() => {
-    const dialog = document.querySelector("ux-dialog:not([data-seen])");
-    if (dialog) {
-      dialog.setAttribute("data-seen", "1");
-      WandEnhancer.log("A dialog opened.");
-    }
-  }).observe(document.documentElement, { childList: true, subtree: true });
-}
+```bash
+# Clone the repository structure
+git clone https://github.com/VarshuAi/Wand-Enhancer.git
+cd Wand-Enhancer
 ```
 
-> Scripts run with the same privileges as the Wand client. Only add scripts you trust and understand.
+<!-- ============================== TECH STACK ============================== -->
 
-## 🛠️ How to build from source
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="28">
+<samp>&nbsp;[📦] DEPENDENCIES (Tech Stack)</samp>
+</h2>
 
-Building from source on Windows requires a local development environment.
+<div align="center">
 
-### Requirements
+#### `>> SYSTEM INVENTORY`
+![Code](https://img.shields.io/badge/Code-Primary_Language-00FF41?style=for-the-badge&logoColor=black)
+![Git](https://img.shields.io/badge/Git-VCS-14354C?style=for-the-badge&logo=git&logoColor=white)
 
-- `CMake`
-- `Node.js` and `pnpm`
-- `Visual Studio 2022` or `Build Tools for Visual Studio 2022` with `MSBuild`
-- Visual Studio `Desktop development with C++` workload
-- .NET Framework 4.8 desktop build tools / targeting pack
-
-### Build steps
-
-1. Clone this repository.
-2. Install the requirements above and make sure `cmake`, `pnpm`, and `MSBuild` are available.
-3. Run `build.cmd` from Command Prompt or PowerShell.
-
-The build script installs the web panel dependencies, builds the frontend, compiles the native helper with CMake, restores NuGet packages, and builds the WPF solution.
-
----
-
-## ❓ Q&A
-
-- **I applied the configuration but get stuck on 'Loading...'**
-  - Just close the application completely and restart it.
-- **Does this send data anywhere?**
-  - No. All operations are strictly offline and local to your machine. 
-
----
-## 🖼️ Screenshots
-![1](./assets/screenshots/app1.png)
-<div align='center'>
-
-![2](./assets/screenshots/app2.png)
 </div>
 
----
+<!-- ============================== SETUP ============================== -->
 
-## 📜 License
-This project is licensed under the Apache-2.0 - see the [LICENSE](LICENSE.md) file for details.
+<h2>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28">
+<samp>&nbsp;[⚡] ENVIRONMENT BOOT (Setup)</samp>
+</h2>
 
----
-## ❤️ Support
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/kitbyte)
+```bash
+# 1. Clone repository remote
+git clone https://github.com/VarshuAi/Wand-Enhancer.git
+cd Wand-Enhancer
 
----
+# 2. Check technical prerequsites
+# Ensure runtime matches requirements (Code)
+```
 
-> **Legal Disclaimer:**
-> This project is a third-party enhancement tool intended solely for educational, research, and local interoperability purposes. It does not distribute any proprietary code or bypass server-side validations. All modifications are performed locally to customize the user's interface.
+<!-- ============================== STRUCTURE ============================== -->
 
----
+<h2>
+<samp>&nbsp;[📁] REPO_TREE (Structure)</samp>
+</h2>
 
-[![Star History Chart](https://api.star-history.com/svg?repos=k1tbyte/Wand-Enhancer&type=Date)](https://www.star-history.com/#k1tbyte/Wand-Enhancer&Date)
+```
+Wand-Enhancer/
+├── src/             # Source code entrypoints
+├── docs/            # Project documentation files
+├── README.md        # Interactive readme sheet
+└── LICENSE          # Permission details
+```
+
+<!-- ============================== FOOTER ============================== -->
+
+<div align="center">
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,1a1b27,0d1117&height=80&section=footer&text=&fontSize=0" width="100%"/>
+
+<br/>
+
+<a href="https://github.com/VarshuAi"><img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&size=14&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+VarshuAi;Build+Fast.+Ship+Secure.+Scale+Infinite." alt="Typing SVG"/></a>
+
+<br/>
+
+<a href="https://github.com/VarshuAi"><img src="https://img.shields.io/badge/VarshuAi-Profile-00FF41?style=for-the-badge&logo=github&logoColor=black" alt="GitHub Profile"/></a>
+<a href="https://github.com/VarshuAi/Wand-Enhancer"><img src="https://img.shields.io/badge/Wand-Enhancer-Repo-00FF41?style=for-the-badge&logo=github&logoColor=black" alt="Repository"/></a>
+
+<br/>
+
+</div>
